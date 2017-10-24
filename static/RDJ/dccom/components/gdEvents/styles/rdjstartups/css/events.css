@@ -1,0 +1,465 @@
+
+
+
+/*EVENTS
+******************************************************************/
+
+div.copy ul#eventList {
+	margin: 0px;
+	padding: 0px;	
+}
+
+div.copy ul#eventList li {
+	margin: 0px;
+	padding: 20px 0 20px 0;
+	background-image: none;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	z-index: 5;
+}
+
+div.copy ul#eventList h3 {
+	font-size: 18px;
+	padding: 10px 0 5px 55px;
+	margin: 0 0 5px 0;
+	text-transform: none;
+	border: 0px;
+	font-style: normal;
+	border: 0;
+}
+
+div.copy ul#eventsList h3 a {
+	color: #3b81c6;
+	text-decoration: none;
+}
+
+ul#eventsList p {
+	padding: 0 0 10px 55px;
+}
+
+ul#eventsList p.date {
+	width: 43px;
+	height: 43px;
+	background: transparent url('../images/layout/bgCalendarBlue2.html') 0px 0px no-repeat;
+	position: absolute;
+	z-index: 11;
+	top: 20px;
+	left: 0px;
+	padding: 0 0 0 0;
+	margin: 0px;
+	font-style: normal;
+	text-transform: uppercase;
+	font-size: 10px;
+	text-align: center;
+	color: #fff;
+	letter-spacing: 1px;
+	font-weight: bold;
+	line-height: 11px;
+}
+
+ul#eventsList p.date span {
+	font-size: 22px;
+	display: block;
+	line-height: 22px;
+	padding-top: 3px;
+	color: #34658e;
+	letter-spacing: 0;
+}
+
+
+/*FULL CALENDAR
+**************************************************************/
+	
+div.month {
+	background-color: #e6edf5;
+	width: 260px;
+	height: 260px;
+	margin: 8px 0 0 9px;
+	padding: 10px 0 0 0;
+	float: left;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+body#home div.month { 
+}
+
+div.month.last {
+	margin-right: 0px;
+}
+
+div.month table {
+	margin: 0 auto;
+	width: auto;
+	border: 0;
+	border-spacing: 0;
+}
+
+div.month table th,
+div.month table td {
+	border: 2px solid #e6edf5;
+	padding: 0;
+}
+
+div.month table th.month {
+	color: #ce2128;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 3px 0 3px 0;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	background-color: transparent;
+}
+
+div.month table th.week,
+div.month table th.day {
+	color: #000;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 3px 0 1px 0;
+}
+
+div.month table th.day {
+	font-weight: normal;
+	background-color: transparent;
+	padding-bottom: 6px;
+}
+
+div.month table td, table.month td {
+	padding: 3px 6px;
+	background-color: #fff;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	font-size: 14px;
+	color: #000;
+	text-align: center;
+}
+
+div.month table td.week {
+	font-weight: bold;
+	color: #000;
+}
+
+div.month table td.active, table.month td.active {
+	background-color: #c00;
+	color: #fff;
+}
+
+div.month table td.active a, table.month  td.active a {
+	color: #fff;
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+}
+
+div.month table td.active:hover {
+	background-color: #709bbe;
+}
+
+
+/*key*/
+
+div.key {
+	margin: 5px 0 0 15px;
+	display:none;
+}
+
+div#wrap div.month table td.red, 
+div#wrap table.month td.red {
+	background-color: #b82652;
+	color: #fff;
+}
+
+div#wrap div.month table td.blue, 
+div#wrap table.month td.blue {
+	background-color: #267ac1;
+	color: #fff;
+}
+div#wrap div.month table td.green, 
+div#wrap table.month td.green {
+	background-color: #82ab3c;
+	color: #fff;
+}
+div#wrap div.month table td.orange, 
+div#wrap table.month td.orange {
+	background-color: #f68039;
+	color: #fff;
+}
+div#wrap div.month table td.turquoise, 
+div#wrap table.month td.turquoise {
+	background-color: #0ebdbd;
+	color: #fff;
+}
+
+div#wrap div.month table td.purple, 
+div#wrap table.month td.purple {
+	background-color: #7844ad;
+	color: #fff;
+}
+
+div#wrap div.month table td.yellow, 
+div#wrap table.month td.yellow {
+	background-color: #e7b51b;
+	color: #fff;
+}
+
+div#wrap div.month table td.black, 
+div#wrap table.month td.black {
+	background-color: #000;
+	color: #fff;
+}
+
+div#wrap div.month table td.pink, 
+div#wrap table.month td.pink {
+	background-color: #ff66cc;
+	color: #fff;
+}
+
+div#wrap div.month table td.teal, 
+div#wrap table.month td.teal {
+	background-color: #13866f;
+	color: #fff;
+}
+
+
+
+div#eventsMonth {
+    background-color: #010000;
+    border: medium none;
+    color: #FFFFFF;
+    font-size: 1.3em;
+    margin: 0;
+    padding: 3px 0 3px 10px;
+}
+div#eventsToolbar {
+    float: right;
+    margin-right: 3px;
+}
+div#eventsToolbar a {
+    color: #FFFFFF;
+    font-size: 11px;
+    font-weight: normal;
+    text-decoration: none;
+}
+div#eventsToolbar a:hover {
+    background-color: #333333;
+}
+table.events {
+    background-color: #D9DECA;
+    color: #000000;
+    font-size: 11px;
+}
+table.events th {
+    background-color: #333333;
+    color: #FFFFFF;
+    padding: 3px;
+}
+table.events td {
+    background-color: #FFFFFF;
+    height: 40px;
+    padding: 3px;
+    text-align: center;
+    vertical-align: middle;
+}
+:first-child + html table.events td {
+    height: 30px;
+}
+table.events td.hasEvents {
+    background-color: #FFFFCC;
+    padding: 0;
+    vertical-align: middle;
+}
+table.events td.passed {
+    background-color: #FEFEFE;
+    color: #B4B5B3;
+}
+table.events td.today {
+    background-image: url("../images/events/today.html");
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-weight: bold;
+}
+table.events td.disabled {
+    background-color: #FDF4E7;
+}
+table.events td.hasEvents {
+    color: #EA9312;
+}
+table.events td.hasEvents span {
+    color: #282F77;
+    display: block;
+    line-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+table.events td span {
+    font-size: 0.8em;
+}
+table.events td div.dayNumber p {
+    height: 30px;
+    margin: 0;
+    overflow: hidden;
+    padding: 7px 0 0;
+    text-align: center;
+    vertical-align: middle;
+}
+a#calEvents {
+    text-decoration: none;
+    vertical-align: middle;
+}
+table.events td.hasEvents:hover, table.events td.hasEvents:visited {
+    background-color: #FCBF68;
+}
+div#eventsContainerBody {
+    background-color: #FFFFFF;
+    height: 600px;
+    overflow: auto;
+    padding: 0;
+
+}
+div#frame {
+    background-color: #FFFFFF;
+
+}
+ul#eventList, ul#courseList {
+    clear: both;
+    margin: 0 20px;
+    overflow: hidden;
+}
+ul#eventList li, ul#courseList li {
+    border-bottom: 1px dotted #EEEEEE;
+    margin: 0 40px 0;
+    overflow: hidden;
+}
+ul#eventList li div.eventContent, ul#courseList li div.courseContent {
+   /* background: url("../images/events/eventsIcon.gif") no-repeat scroll 10px 20px transparent;*/
+    display: block;
+    margin: 0;
+    min-height: 50px;
+    overflow: hidden;
+    padding: 20px 0 15px 55px;
+}
+ul#eventList li h4 {
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0 0 3px 0;
+}
+ul#eventList li p {
+    color: #666666;
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+}
+ul#eventList li.evens, ul#courseList li.evens {
+    background-color: #F7F7F7;
+}
+div.eventHeader, div.courseHeader {
+    background: url("../images/events/eventCalendar.png") no-repeat scroll 5px 5px transparent;
+    border-bottom: 1px solid #DDDDDD;
+    display: block;
+    height: 55px;
+    margin: 5px 10px 0;
+    padding: 10px 0 0 60px;
+}
+h3.eventHeader {
+    color: #CE7C02;
+    font-size: 1.8em;
+    font-weight: normal;
+    margin-top: 10px;
+}
+div#body div#frame {
+    border: 1px solid #FACD8C;
+    margin: 10px;
+}
+ul#courseList li a.courseTitle {
+    font-family: ariel;
+    font-size: 1.4em;
+}
+
+
+/* prev next buttons */
+
+div.prevNextButtons{
+	margin:5px 0;
+	width: 250px;	
+}
+
+div.nextEventsYear {
+	float:right;
+	margin:5px -18px 0px 0px;
+	font-size: 16px;
+}
+
+div.prevEventsYear {
+	float:left;
+	margin: 5px 0px 0px 9px;
+	font-size: 16px;
+}
+
+div.allEvents {
+	float:right;
+	margin: 8px 12px 15px 0px;
+	font-size:16px;
+}
+
+
+div.nextEventsYear a, div.prevEventsYear a, div.allEvents a {
+color: white;
+background-color: #CE2128;
+-webkit-border-radius: 6px;
+-moz-border-radius: 6px;
+border-radius: 6px;
+display: inline-block;
+padding: 2px 10px 3px 10px;
+text-decoration: none;
+cursor: pointer;
+}
+
+
+#eventFeaturedId .list{
+	position: relative;	
+	width: 290px;
+	padding: 5px 0;
+}
+
+#eventFeaturedId div.date {
+	width: 43px;
+	height: 43px;
+	background: transparent url('../images/events/bgDate.png') 0px 0px no-repeat;
+	color: #102148;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 11px;
+	font-family: Verdana, sans-serif;
+	text-align: center;
+	z-index: 7;
+	top: 7px;
+	left: 0px;
+}
+
+#eventFeaturedId p.more a {
+	font-size: 1em;
+	color: #3D1D00;
+	background: none; 
+	height: 1em;
+}
+
+.calendarContainer{
+	height: 354px;
+	border: 10px solid #ebebeb;
+	width: 280px;
+	margin: 10px 0px 0px 0px;
+}
+
+p.thumbnail{
+	float: right;
+	padding: 0px 10px 15px 15px;
+}
+
+

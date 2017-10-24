@@ -1,0 +1,30 @@
+div#dccom_GdDocuments {
+	min-height:400px;
+}
+
+div#dccom_GdDocuments table {
+	width: 100%;
+}
+
+div#dccom_GdDocumentsNoResults {
+	text-align:center;
+	color:#AAAAAA;
+	border:1px solid #DDDDDD;
+	padding:10px;
+	font-size:12px;
+}
+
+a.download{
+	background:transparent url('images/icons/download.png') 0 0 no-repeat;
+	padding: 5px 0 5px 30px;
+}
+
+
+div.pull-right.search input{
+	float: right;
+}
+
+.fileIcon {
+	width: 48px;
+	height: 48px !important;
+}

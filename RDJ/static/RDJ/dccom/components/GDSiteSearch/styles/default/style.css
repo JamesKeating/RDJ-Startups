@@ -1,0 +1,397 @@
+
+/*SEARCH IN HEADER
+*******************************************************/
+
+form.searchForm {
+	width: 200px;
+	position: relative;
+	float: right;
+	background: #eee;
+	height: 35px;
+	border: 1px solid #ccc;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-left: 20px;
+}
+
+form.searchForm input[type="text"] {
+	border: 0;
+	width: 80%;
+	float: left;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	height: 35px;
+	padding: 3px 0 3px 10px;
+	font-size: 15px;
+	font-weight: 700;
+	color: #999;
+	background: transparent;
+}
+
+form.searchForm ::-webkit-input-placeholder {
+   color: #999;
+   text-transform: uppercase;
+}
+
+form.searchForm :-moz-placeholder { /* Firefox 18- */
+   color: #999;  
+   text-transform: uppercase;
+}
+
+form.searchForm ::-moz-placeholder {  /* Firefox 19+ */
+   color: #999;  
+   text-transform: uppercase;
+}
+
+form.searchForm :-ms-input-placeholder {  
+   color: #999;
+   text-transform: uppercase;
+}
+
+form.searchForm button {
+	display: inline-block;
+	width: 20%;
+	padding: 0;
+	margin: 0;
+	height: 35px;
+	color: #999;
+	background: transparent;
+	font-size: 14px;
+	border: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+form.searchForm button i {
+	position: relative;
+	right: 0;
+}
+
+
+/*ADVANCED SEARCH FORM
+********************************************************/
+
+.advancedSearchFormHolder {
+	background: #eee;
+}
+
+form.advancedSearchForm {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 10px 20px 25px;
+	max-width: 1000px;
+}
+
+form.advancedSearchForm .form-group {
+	padding-top: 15px;
+	overflow: hidden;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	min-height: 55px;
+}
+
+form.advancedSearchForm legend,
+.formHolder h3 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 28px;
+	font-weight: 700;
+	color: #9e001a;
+	padding: 10px 0 10px;
+}
+
+form.advancedSearchForm label,
+form.advancedSearchForm span {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	display: block;
+	width: 30%;
+	float: left;
+	font-size: 15px;
+	line-height: 18px;
+	font-weight: 400;
+	color: #112b3a;
+	padding: 10px 0 0 0;
+	position: relative;
+}
+
+form.advancedSearchForm label.inline,
+form.advancedSearchForm span.inline {
+	display: inline-block;
+	width: auto;
+	float: none;
+	padding: 10px 10px 0 0;
+}
+
+ form.advancedSearchForm span.req {
+ 	display: inline;
+	color: #9e001a;
+}
+
+form.advancedSearchForm input[type="text"],
+form.advancedSearchForm input[type="password"],
+form.advancedSearchForm input[type="email"],
+form.advancedSearchForm select,
+form.advancedSearchForm textarea {
+	border: 1px solid #bac4cf;
+	width: 70%;
+	float: left;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	height: 40px;
+	padding: 5px;
+	font-size: 14px;
+	font-family: sans-serif;
+	color: #384350;
+	background: #fff;
+}
+
+form.advancedSearchForm select {
+	color: #999;
+}
+
+form.advancedSearchForm textarea {
+	height: 80px;
+}
+
+form.advancedSearchForm button {
+	display: inline-block;
+	padding: 0 25px;
+	margin: 0 0 0 30%;
+	height: 40px;
+	color: #fff;
+	background: #9e001a;
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-decoration: none;
+	border: 0;
+	font-family: 'Roboto', sans-serif;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 70%;
+	cursor: pointer;
+}
+
+form.advancedSearchForm button i {
+	padding-left: 5px;
+}
+
+
+/*TABS
+***********************************************************/
+
+.tabs ul {
+	margin: 0;
+	padding: 0;
+	border-bottom: 5px solid #9e001a;
+	overflow: hidden;
+}
+
+.tabs ul li {
+	margin: 0 1px 0 0;
+	padding: 0;
+	float: left;
+}
+
+.tabs ul li:before {
+	content: "";
+	display: none;
+}
+
+.tabs ul a {
+	display: inline-block;
+	background: #eee;
+	padding: 8px 20px;
+	text-decoration: none;
+}
+
+.tabs ul li.sel a {
+	background: #9e001a;
+	color: #fff;
+}
+
+
+
+/*SEARCH RESULTS
+**********************************************************/
+
+#dcCom_siteSearchResults h2 {
+	padding: 30px 0 20px;
+}
+
+.dcCom_sitesearchResultsWrapper {
+	background: #eee;
+	padding: 10px 20px 20px;
+}
+
+.dcCom_sitesearchResultsWrapper ul {
+	margin: 0;
+	padding: 0;
+}
+
+.dcCom_sitesearchResultsWrapper ul li {
+	margin: 1px 0 0 0;
+	padding: 0;
+}
+
+.dcCom_sitesearchResultsWrapper ul li:before {
+	content: "";
+	display: none;
+}
+
+.dcCom_sitesearchResultsWrapper ul a {
+	display: block;
+	background: rgba(255,255,255,0.7);
+	padding: 10px 10px 10px 40px;
+	text-decoration: none;
+	position: relative;
+}
+
+.dcCom_sitesearchResultsWrapper ul a:before {
+	content: "\f18e";
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: inherit;
+	color: #c00847;
+	font-size: 16px;
+	position: absolute;
+	top: 15px;
+	left: 15px;
+}
+
+.dcCom_sitesearchResultsWrapper ul h3 {
+	text-transform: none;
+	padding: 8px 0 0 0;
+	font-size: 18px;
+	font-weight: 400;
+	color: #1d93d1;
+}
+
+.dcCom_sitesearchResultsWrapper ul span {
+	font-size: 13px;
+	padding-top: 3px;
+	color: #777;
+}
+
+
+
+/* Search Results
+*********************************************************************/
+
+div#quickSearch {
+	position:absolute;
+	z-index: 100;
+	width:350px;
+	margin-top:65px;
+	right:-1px;
+	background-color: #fff;
+	border: 1px solid #bcbbcd;
+}
+
+div#quickSearch .tabs ul {
+	background:#9e001a;
+	margin:0;
+	padding:0;
+	list-style:none;
+	overflow: hidden;
+}
+
+div#quickSearch .tabs ul li {
+	margin:0;
+	padding:0;
+	background-image: none !important;
+	float: left;
+}
+
+div#quickSearch .tabs ul li a {
+	color: #fff;
+	display:block;
+	padding:10px;
+	text-decoration:none;
+	border-bottom:1px solid #dbdbe2;
+	overflow:auto;
+}
+
+div#quickSearch ul li a:hover {
+	background: #ecebf5;
+}
+
+div#quickSearch ul li a span.title {
+	text-transform:uppercase;
+	font-size:12px;
+}
+
+div#quickSearch div#dcCom_siteSearchResults:before {
+	content:url(../images/layout/miniCartNip.html);
+	position: absolute;
+	left:0;
+	margin-top:-12px;
+	margin-left:240px;
+}
+
+div#quickSearch span.thumb {
+	display:block;
+	width:50px;
+	height:50px;
+	overflow:hidden;
+	float:left;
+	margin-right:10px;
+	border:1px solid #f4dfd1;
+}
+
+div#quickSearch span.desc {
+	display:block;
+	font-size:11px;
+	color:#555;
+}
+
+div#quickSearch span.thumb img {
+	max-width:50px;
+	min-height:50px;
+	display:block;
+}
+
+div#quickSearch p.more a {
+	display: block;
+	text-transform:uppercase;
+	font-size:12px;
+	text-align:center;
+	padding: 5px 0 12px 0;
+	font-size: 15px;
+	text-decoration: none;
+}
+
+div#quickSearch div#dcCom_gdSearch a span {
+	color: #676e1b;
+}
+
+div#quickSearch div#dcCom_gdSearch h3,
+div#quickSearch div#dcCom_gdSearch h4,
+div#quickSearch div#dcCom_gdSearch p {
+	display: none;
+}
+
+div#quickSearch div#dcCom_gdSearch div.dcCom_gdSearchResultsGroup {
+	border-bottom: 0;
+}
+
+div#quickSearch .dcCom_sitesearchResultsWrapper.tabOff,
+div#dcCom_siteSearchResults .dcCom_sitesearchResultsWrapper.tabOff,
+span#dcCom_gdSearch_SectionLinksTitle,
+div#quickSearch div#searchRefineLink,
+div#quickSearch div#dcCom_gdSearchForm
+{
+	display: none;
+}
+
+
